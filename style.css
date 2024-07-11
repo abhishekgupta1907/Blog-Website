@@ -1,7 +1,5 @@
-p{
-    font-size: larger;
-    color: aqua;
-}
-.con{
-    background-color: blue;
+.container{
+    background-color: aqua;
+    width: 200px;
+    height: 500px;
 }
