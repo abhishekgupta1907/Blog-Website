@@ -1,11 +1,12 @@
 import "./App.css";
 import React from "react";
-import Home from "./Pages/Home";
+import RouteComponents from "Routes/RouteComponents";
+import NavBar from "Components/NavBar";
 function App() {
     return (
         <>
-            <h1 className="bg-green-100 text-5xl"> Hello</h1>
-            <Home />
+            <NavBar />
+            <RouteComponents />
         </>
     );
 }

@@ -1,7 +1,9 @@
 import React from "react";
-
-const Home = () => {
-    return <div>Hello Home</div>;
+import Banner from "Components/Banner";
+export const Home = () => {
+    return (
+        <div>
+            <Banner />
+        </div>
+    );
 };
-
-export default Home;
