@@ -37,7 +37,7 @@
 
 // export default NavBar;
 
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "../App.css";
 import {
@@ -47,9 +47,11 @@ import {
     FaBars,
     FaXmark,
 } from "react-icons/fa6";
+import ModalExample from "./ModalExample";
 // import classNames from "classnames";
 const NavBar = () => {
     const [isMenuOpen, SetMenuOpen] = React.useState(false);
+    const [isModalOpen, setIsModalOpen] = useState(false);
     const toggleMenu = () => {
         SetMenuOpen(!isMenuOpen);
     };
@@ -60,6 +62,13 @@ const NavBar = () => {
         { path: "/blogs", link: "Blogs" },
         { path: "/contact", link: "Contact" },
     ];
+    //Modal Deatils
+    const openModal = () => {
+        setIsModalOpen(true);
+    };
+    const closeModal = () => {
+        setIsModalOpen(false);
+    };
     return (
         <header className=" bg-blue-300 text-white fixed top-0 left-0 right-0">
             <nav className="px-4 py-2 max-w-7xl mx-auto flex justify-between items-center">
@@ -113,10 +122,15 @@ const NavBar = () => {
                     <a href="/" className="text-white">
                         <FaTwitter className=" hover:text-blue-800" />
                     </a>
-                    <button className="bg-blue-400 px-6 py-2 font-medium rounded hover:bg-slate-50 hover:text-blue-400 transition-all duration-400 ease-in">
+                    <button
+                        onClick={openModal}
+                        className="bg-blue-400 px-6 py-2 font-medium rounded hover:bg-slate-50 hover:text-blue-400 transition-all duration-400 ease-in"
+                    >
                         Log In
                     </button>
                 </div>
+                {/* our Modal Componenet is here */}
+                <ModalExample isOpen={isModalOpen} onClose={closeModal} />
                 {/* Mobile menu Button, it will only display on mobile divices */}
                 <div className="md:hidden">
                     <button onClick={toggleMenu} className="cursor-pointer ">

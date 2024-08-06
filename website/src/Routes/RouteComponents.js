@@ -1,5 +1,13 @@
 import React from "react";
-import { About, Contact, Home, Services, Blogs, SingleBlog } from "../Pages";
+import {
+    About,
+    Contact,
+    Home,
+    Services,
+    Blogs,
+    SingleBlog,
+    ShowBlog,
+} from "../Pages";
 import { Routes, Route } from "react-router-dom";
 
 const RouteComponents = () => {
@@ -15,6 +23,7 @@ const RouteComponents = () => {
                     <Route path=":blogid" element={<SingleBlog />}></Route>
                 </Route>
                 <Route path="/contact" element={<Contact />}></Route>
+                <Route path="/showblog" element={<ShowBlog />}></Route>
             </Routes>
         </div>
     );

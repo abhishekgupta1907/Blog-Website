@@ -34,7 +34,6 @@ const BlogCards = ({ blogs, currentPage, selectedcategory, pageSize }) => {
                     </Link>
                 ))}
             </div>
-
             <Outlet />
         </>
     );
