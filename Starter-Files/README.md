@@ -1,1 +1,1 @@
-# react-js-blog-starter-files
+# blog-starter-files
