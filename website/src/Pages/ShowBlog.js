@@ -11,7 +11,7 @@ export const ShowBlog = () => {
     return (
         <div>
             <div className=" py-10 bg-blue-300 text-center text-white px-4 mt-10">
-                <h2 className="text-white text-center text-5xl lg:7xl leading-snug font-bold mb-5">
+                <h2 className="text-white text-center text-5xl lg:7xl leading-snug font-bold mb-4">
                     Single Blog Page{" "}
                 </h2>
             </div>

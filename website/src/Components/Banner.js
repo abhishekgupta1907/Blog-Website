@@ -4,9 +4,9 @@ import { FaArrowRight } from "react-icons/fa6";
 
 const Banner = () => {
     return (
-        <div className="px-4 py-32 bg-blue-300 mx-auto">
+        <div className="px-4 py-20 bg-blue-300 mx-auto">
             <div className=" text-center">
-                <h1 className="text-white text-center text-5xl lg:7xl leading-snug font-bold mb-5">
+                <h1 className="text-white text-center text-5xl lg:7xl leading-snug font-bold mb-5 mt-2">
                     Welcome To Our Blog{" "}
                 </h1>
                 <p className="text-gray-100 lg:w-3/5 mx-auto mb-5 font-primary">
@@ -18,7 +18,7 @@ const Banner = () => {
                 <div>
                     <Link
                         to="/"
-                        className="text-decoration-none   font-medium hover:text-white inline-flex items-center py-1 "
+                        className="text-decoration-none   font-medium hover:text-white inline-flex items-center  "
                     >
                         Learn more <FaArrowRight className="mt-1 ml-2" />
                     </Link>

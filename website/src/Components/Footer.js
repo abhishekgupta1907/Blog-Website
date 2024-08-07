@@ -207,7 +207,7 @@ const Footer = () => {
                             />
                             <button
                                 type="submit"
-                                className="inline-flex items-center justify-center h-12 px-6  font-medium tracking-wide text-white transition duration-200 rounded shadow-md hover:bg-gray-400 hover:text-blue-400 focus:outline-none border"
+                                className="inline-flex bg-blue-400 items-center justify-center h-12 px-6  font-medium tracking-wide transition duration-200 ease-in rounded shadow-md hover:bg-slate-50 hover:text-blue-400 focus:outline-none border"
                             >
                                 {" "}
                                 Follow
