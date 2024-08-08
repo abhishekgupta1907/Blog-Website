@@ -10,12 +10,7 @@ export const ShowBlog = () => {
         data;
     return (
         <div>
-            <div className=" py-10 bg-blue-300 text-center text-white px-4 mt-10">
-                <h2 className="text-white text-center text-5xl lg:7xl leading-snug font-bold mb-4">
-                    Single Blog Page{" "}
-                </h2>
-            </div>
-            <div className="max-w-7xl mx-auto my-12 flex flex-col md:flex-row gap-12">
+            <div className="max-w-7xl mx-auto my-12 flex flex-col md:flex-row gap-12 mt-24">
                 <div className="lg:w-3/4 mx-auto">
                     <div>
                         <img
