@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { FaUser } from "react-icons/fa";
 const BlogCards = ({ blogs, currentPage, selectedcategory, pageSize }) => {
     const filteredBlogs = blogs
@@ -34,7 +34,6 @@ const BlogCards = ({ blogs, currentPage, selectedcategory, pageSize }) => {
                     </Link>
                 ))}
             </div>
-            <Outlet />
         </>
     );
 };

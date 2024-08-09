@@ -1,21 +1,16 @@
-import React, { useEffect } from "react";
-// import SideBar from "Components/SideBar";
-import { useParams, useLocation, useNavigate } from "react-router-dom";
-// import { FaUser, FaClock } from "react-icons/fa";
+import React from "react";
+import SideBar from "Components/SideBar";
+import { useParams, useLocation } from "react-router-dom";
+import { FaUser, FaClock } from "react-icons/fa";
 export const SingleBlog = () => {
     const { blogid } = useParams();
-    const navigate = useNavigate();
     const { state } = useLocation();
     const data = state && state.find((el) => el.id === Number(blogid));
-    console.log(data);
-    // const { title, image, author, published_date, content, reading_time } =
-    //     data;
-    useEffect(() => {
-        navigate("/showblog", { state: { data }, replace: true });
-    }, [data, navigate]);
+    const { title, image, author, published_date, content, reading_time } =
+        data;
     return (
         <>
-            {/* <div>
+            <div>
                 <div className="max-w-7xl mx-auto my-12 flex flex-col md:flex-row gap-12 mt-24">
                     <div className="lg:w-3/4 mx-auto">
                         <div>
@@ -121,7 +116,7 @@ export const SingleBlog = () => {
                         <SideBar />
                     </div>
                 </div>
-            </div> */}
+            </div>
         </>
     );
 };
